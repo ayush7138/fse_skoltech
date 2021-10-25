@@ -3,9 +3,6 @@ set -e
 set -x
 
 apt install python3-pip
-apt install python3.8-venv
-python3 -m venv venv/bin/python3
-venv/bin/activate
 
 make requirements
 
