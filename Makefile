@@ -6,7 +6,7 @@ help:
 	@echo "make test"
 
 requirements:
-	$(PIP) install --no-cache-dir -r requirements.txt
+	$(PIP) install --no-cache-dir -r requirements_new.txt
 
 run:
 	$(PYTHON) somefile.py
