@@ -2,6 +2,7 @@
 set -e
 set -x
 
+apt install python3-pip
 pip install virtualenv
 virtualenv -p python3 .
 source ./bin/activate
