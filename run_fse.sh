@@ -2,7 +2,7 @@
 set -e
 set -x
 
-apt install python3-pip -y
+apt install python3-pip
 
 make requirements
 
