@@ -3,6 +3,7 @@ set -e
 set -x
 
 apt install python3-pip
+apt-get install wget
 
 make requirements
 
