@@ -6,10 +6,9 @@ help:
 	@echo "make test"
 
 requirements:
-	$(PIP) install tensorflow
-	$(PIP) install -r requirements.txt
+	$(PIP) install --no-cache-dir -r requirements.txt
 
-run: $(VENV)/bin/activate
+run:
 	$(PYTHON) somefile.py
 
 test: 
