@@ -1,5 +1,3 @@
-VENV = venv
-PYTHON = $(VENV)/bin/python3
 PIP = $(VENV)/bin/pip
 
 help:
@@ -8,7 +6,7 @@ help:
 	@echo "make test"
 
 requirements:
-	python3 -m venv $(VENV)
+	$(PIP) install tensorflow
 	$(PIP) install -r requirements.txt
 
 run: $(VENV)/bin/activate
