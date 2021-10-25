@@ -5,7 +5,7 @@ set -x
 apt install python3-pip
 pip install virtualenv
 virtualenv -p python3 .
-source ./bin/activate
+source /graphics/tensorflow_graphics/projects/local_implicit_grid/bin/activate
 
 pip install tensorflow
 make requirements
