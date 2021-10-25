@@ -1,4 +1,4 @@
-PIP = $(VENV)/bin/pip
+PIP = /bin/pip
 
 help:
 	@echo "make requirements"
@@ -13,11 +13,9 @@ run: $(VENV)/bin/activate
 	$(PYTHON) somefile.py
 
 test: 
-	python3 -m venv $(VENV)
 	$(PIP) list
 
 clean:
 	rm -rf __pycache__
-	rm -rf $(VENV)
 .PHONY: run clean
 
