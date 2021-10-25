@@ -3,11 +3,10 @@ set -e
 set -x
 
 apt install python3-pip
-pip install virtualenv
-virtualenv -p python3 .
-source /graphics/tensorflow_graphics/projects/local_implicit_grid/bin/activate
+apt install python3.8-venv
+python3 -m venv venv/bin/python3
+venv/bin/activate
 
-pip install tensorflow
 make requirements
 
 wget https://storage.googleapis.com/local-implicit-grids/pretrained_ckpt.zip
