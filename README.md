@@ -62,11 +62,11 @@ python reconstruct_geometry.py \
 1) To make engineering stuff working please follow the instructions:
   A) You need to download "Dockerfile" from the current repository (or you can clone the repo fully by ```git clone https://github.com/ayush7138/fse_skoltech.git```) and build "Dockerfile" by:
 ```bash
-docker build -t idle_image2 .
+docker build -t idle_image2 
 ```
   B) Another version for starting the process is to download docker image from Dockerhub ```docker pull blank713/fse_project:second```
-2) Run docker image ``` 
-      docker run  -it --name test idle_image2 ```
+2) Run docker image 
+     ```  docker run  -it --name test idle_image2 ```
 3) Push next command to go in appropriate folder
 ```cd graphics/tensorflow_graphics/projects/local_implicit_grid/ ```
 4) ```./run_fse.sh``` (dont forget to enter "y" when its requested by the system and be shure to have enough free space 
@@ -77,5 +77,5 @@ Be aware that you is able to execute separate commands from Makefile (refer to `
 
 Be careful and patient!!! - this execution takes up two hours to be done
 5) After it you can make testing by ```make test``` 
-6) Pylint ```./pylint_test.sh```
-7) Workflow - you can additionally try 
+6) Execute Pylint by ```./pylint_test.sh```
+7) Workflow - you can additionally try GitHub workflows
