@@ -7,6 +7,8 @@ help:
 
 requirements:
 	$(PIP) install --no-cache-dir -r requirements_new.txt
+	$(PIP) freeze
+	$(PIP) install pylint
 
 run:
 	python3 replace.py
