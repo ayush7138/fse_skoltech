@@ -11,6 +11,7 @@ pushd $SCRIPTPATH
 
 apt install python3-pip
 apt-get install wget
+apt install unzip
 
 make requirements
 
