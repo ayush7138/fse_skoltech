@@ -10,7 +10,7 @@ next engineering staff was done:
 - The public git repository with all source and engineering files, as well as 
 README file with description for a successful run of the original project 
 - Docker container to build docker image locally ("Dockerfile")
-- Docker image at Dockerhub (link:) to pull and run image
+- Docker image at Dockerhub (link: https://hub.docker.com/layers/blank713/fse_project/third/images/sha256-f4c428724822e5737efd629043165a03e3a25c16838220fb356e9f0da5b868bd?context=repo) to pull and run image
 - Build system in form of Makefiles ("Makefile") by which:
   -  installation of requirements ("requirements_new")
   -  run: obtain external data, perform data preprocessing, training and model optimization ("run_fse")
@@ -66,7 +66,7 @@ python reconstruct_geometry.py \
 docker build -t idle_image2 
 ```
 
-  B) Another version for starting the process is to download docker image from Dockerhub ```docker pull blank713/fse_project:second```
+  B) Another version for starting the process is to download docker image from Dockerhub ```docker pull blank713/fse_project:third```
   
 2) Run docker image 
 ```bash  
