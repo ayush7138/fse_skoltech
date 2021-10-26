@@ -74,7 +74,7 @@ docker build -t idle_image2 .
   
 2) Run docker image 
 ```bash  
-docker run  -it --name test idle_image2 
+docker run -it idle_image2
 ```
 
 3) Push next command to go in appropriate folder
