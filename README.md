@@ -94,7 +94,7 @@ and run main script with calculations (with demodata as default, to change it to
 
 Be aware, that you is able to execute separate commands from Makefile (refer to ```make help```, "make" has "requirements" which will separatelly install all required libraries, "run" which will make calculations, and "test" option, which is abble to check if installed libraries are actuall and etc)
 
-Be careful and patient!!! - this execution takes up two hours to be done
+Be careful and patient!!! - this execution takes up three to four hours to be done depending on your system
 
 5) After it you can make testing by ```make test``` 
 
