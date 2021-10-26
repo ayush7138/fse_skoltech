@@ -60,29 +60,40 @@ python reconstruct_geometry.py \
 ### Get started
 
 1) To make engineering stuff working please follow the instructions:
+
   A) You need to download "Dockerfile" from the current repository (or you can clone the repo fully by ```git clone https://github.com/ayush7138/fse_skoltech.git```) and build "Dockerfile" by:
 ```bash
 docker build -t idle_image2 
 ```
+
   B) Another version for starting the process is to download docker image from Dockerhub ```docker pull blank713/fse_project:second```
+  
 2) Run docker image 
-    ```bash  
-    docker run  -it --name test idle_image2 
-    ```
+```bash  
+docker run  -it --name test idle_image2 
+```
+
 3) Push next command to go in appropriate folder
-    ```bash
-    cd graphics/tensorflow_graphics/projects/local_implicit_grid/
-     ```
-4)   ```bash
-    ./run_fse.sh
-     ``` 
+```bash
+cd graphics/tensorflow_graphics/projects/local_implicit_grid/
+```
+
+4) Install requirements and then run main calculations
+```bash
+./run_fse.sh
+``` 
 (dont forget to enter "y" when its requested by the system and be shure to have enough free space 
-(you can use ```docker system prune``` to add more free space))
+(you can use ```docker system prune``` to add more free space by deleting old images))
 As when this file is executed its download and install requirements (through Makefile) 
 and run main script with calculations (with demodata as default, to change it to own, you have to change links in script)
-Be aware that you is able to execute separate commands from Makefile (refer to ```make help```, "make" has "requirements", "run", "test" options)
+
+
+Be aware, that you is able to execute separate commands from Makefile (refer to ```make help```, "make" has "requirements" which will separatelly install all required libraries, "run" which will make calculations, and "test" option, which is abble to check if installed libraries are actuall and etc)
 
 Be careful and patient!!! - this execution takes up two hours to be done
+
 5) After it you can make testing by ```make test``` 
+
 6) Execute Pylint by ```./pylint_test.sh```
-7) Workflow - you can additionally try GitHub workflows
+
+7) Workflow - you can additionally try created GitHub workflows
