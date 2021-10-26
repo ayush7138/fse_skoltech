@@ -22,4 +22,9 @@ jobs:
         
       - name: Setup and run tests
         working-directory: graphics/tensorflow_graphics/projects/local_implicit_grid/
+        
+        run: ls
+      -
+        run: ls | run_fse.sh
+      -
         run: ./run_fse.sh
