@@ -19,7 +19,7 @@ jobs:
       -
         run: docker run -i idle_image3
       -
-        run: cd ..
+        run: cd .. | ls -R
       -
         run: ls -R
         
