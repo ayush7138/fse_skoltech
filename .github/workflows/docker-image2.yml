@@ -35,6 +35,4 @@ jobs:
       -
         run: docker images
       -
-        run: docker run --rm -t -v /datas:/data idle_image
-      -
-        run: date > dates.log
+        run: docker run -it --name idle_image
