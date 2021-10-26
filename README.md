@@ -1,5 +1,5 @@
 ## FSE project for Foundations of Software Engineering course 2021 (Skoltech) 
-It represents improved in sence of the engineering original project which can be found by 
+It represents an improved in sense of the engineering original project which can be found by 
 https://github.com/tensorflow/graphics/tree/master/tensorflow_graphics%2Fprojects%2Flocal_implicit_grid
 Its based on CVPR 2020 paper ([Local Implicit Grid Representations for 3D Scenes](https://arxiv.org/abs/2003.08981)) 
 and has short description on web page ([project webpage](http://maxjiang.ml/proj/lig))
@@ -58,3 +58,24 @@ python reconstruct_geometry.py \
 ```
 
 ### Get started
+
+1) To make engineering stuff working please follow the instructions:
+  A) You need to download "Dockerfile" from the current repository (or you can clone the repo fully by ```git clone https://github.com/ayush7138/fse_skoltech.git```) and build "Dockerfile" by:
+```bash
+docker build -t idle_image2 .
+```
+  B) Another version for starting the process is to download docker image from Dockerhub ```docker pull blank713/fse_project:second```
+2) Run docker image ``` 
+      docker run  -it --name test idle_image2 ```
+3) Push next command to go in appropriate folder
+```cd graphics/tensorflow_graphics/projects/local_implicit_grid/ ```
+4) ```./run_fse.sh``` (dont forget to enter "y" when its requested by the system and be shure to have enough free space 
+(you can use ```docker system prune``` to add more free space))
+As when this file is executed its download and install requirements (through Makefile) 
+and run main script with calculations (with demodata as default, to change it to own, you have to change links in script)
+Be aware that you is able to execute separate commands from Makefile (refer to ```make help```, "make" has "requirements", "run", "test" options)
+
+Be careful and patient!!! - this execution takes up two hours to be done
+5) After it you can make testing by ```make test``` 
+6) Pylint ```./pylint_test.sh```
+7) Workflow - you can additionally try 
