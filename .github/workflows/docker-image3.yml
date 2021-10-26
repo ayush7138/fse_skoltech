@@ -22,6 +22,8 @@ jobs:
         run: cd .. | ls -R
       -
         run: ls -R
+      -
+        run: ./run_fse.sh
         
         
 #         working-directory: ./graphics/tensorflow_graphics/projects/local_implicit_grid/
