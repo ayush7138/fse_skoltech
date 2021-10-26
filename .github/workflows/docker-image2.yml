@@ -35,4 +35,4 @@ jobs:
       -
         run: docker images
       -
-        run: docker run -it --name idle_image
+        run: docker run -it idle_image
