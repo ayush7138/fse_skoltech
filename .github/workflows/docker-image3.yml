@@ -19,6 +19,8 @@ jobs:
       -
         run: docker run -i idle_image3
       -
+        run: pwd
+      -
         run: cd ./graphics | ls -R
       -
         run: ls -R
