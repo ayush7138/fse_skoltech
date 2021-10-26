@@ -1,0 +1,24 @@
+name: Docker Image CI
+
+on:
+  push
+jobs:
+  building:
+    name: Checkouts
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Pull the repository
+        uses: actions/checkout@v2
+      -
+        run: ls
+      -
+        run: docker build -t idle_image4 .
+      -
+        run: docker images
+      -
+        run: docker run -i idle_image4
+      -
+        working-directory: graphics/tensorflow_graphics/projects/local_implicit_grid/
+      -
+        run: ./run_fse.sh
