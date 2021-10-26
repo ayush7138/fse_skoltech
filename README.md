@@ -100,5 +100,14 @@ Be careful and patient!!! - this execution takes up three to four hours to be do
 
 6) Execute Pylint by ```./pylint_test.sh```
 
+We met problem, that the typing-extensions version should be 3.10.2 for package Pylint, but there is also tensorflow, which requre <3.7.4. Lower version of pylint is unstable. That's the reason, why we didn't make it.
+
+
+![image](https://user-images.githubusercontent.com/74896805/138922254-fc95531b-da69-4f15-a7e1-0b3343bc2909.png)
+
+![image](https://user-images.githubusercontent.com/74896805/138922280-3f35fdfb-e109-407f-a4d2-77ddb6961375.png)
+
+
+
 7) Workflow - you can additionally try created GitHub workflows
 
