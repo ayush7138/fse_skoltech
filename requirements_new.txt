@@ -6,3 +6,4 @@ scikit-image>==0.15.0
 trimesh>=3.2.12
 six==1.15.0
 tensorflow>=1.14.0
+pylint==2.11.1
