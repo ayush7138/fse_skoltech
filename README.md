@@ -62,9 +62,13 @@ python reconstruct_geometry.py \
 1) To make engineering stuff working please follow the instructions:
 
   A) You need to download "Dockerfile" from the current repository (or you can clone the repo fully by ```git clone https://github.com/ayush7138/fse_skoltech.git```) and build "Dockerfile" by:
+  
+(If you use git clone then apply ```cd fse_skoltech```)
+
 ```bash
 docker build -t idle_image2 .
 ```
+
 
   B) Another version for starting the process is to download docker image from Dockerhub ```docker pull blank713/fse_project:third```
   
