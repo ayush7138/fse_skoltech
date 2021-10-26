@@ -66,10 +66,17 @@ docker build -t idle_image2
 ```
   B) Another version for starting the process is to download docker image from Dockerhub ```docker pull blank713/fse_project:second```
 2) Run docker image 
-    ```bash  docker run  -it --name test idle_image2 ```
+    ```bash  
+    docker run  -it --name test idle_image2 
+    ```
 3) Push next command to go in appropriate folder
-```cd graphics/tensorflow_graphics/projects/local_implicit_grid/ ```
-4) ```./run_fse.sh``` (dont forget to enter "y" when its requested by the system and be shure to have enough free space 
+    ```bash
+    cd graphics/tensorflow_graphics/projects/local_implicit_grid/
+     ```
+4)   ```bash
+    ./run_fse.sh
+     ``` 
+(dont forget to enter "y" when its requested by the system and be shure to have enough free space 
 (you can use ```docker system prune``` to add more free space))
 As when this file is executed its download and install requirements (through Makefile) 
 and run main script with calculations (with demodata as default, to change it to own, you have to change links in script)
