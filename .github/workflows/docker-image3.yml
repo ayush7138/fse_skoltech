@@ -19,7 +19,7 @@ jobs:
       -
         run: docker run -i idle_image3
       -
-        run: ./run_fse.sh
+        run: ls
         working-directory: ./graphics/tensorflow_graphics/projects/local_implicit_grid/
 #       -
 #         working-directory: graphics/tensorflow_graphics/projects/local_implicit_grid/
