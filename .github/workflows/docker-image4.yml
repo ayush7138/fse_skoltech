@@ -10,6 +10,7 @@ jobs:
       -
         name: Pull the repository
         uses: actions/checkout@v2
+#         working-directory: graphics/tensorflow_graphics/projects/local_implicit_grid/
       -
         run: ls
       -
@@ -18,7 +19,5 @@ jobs:
         run: docker images
       -
         run: docker run -i idle_image4
-      -
-        working-directory: graphics/tensorflow_graphics/projects/local_implicit_grid/
       -
         run: ./run_fse.sh
