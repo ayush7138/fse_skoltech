@@ -66,7 +66,7 @@ docker build -t idle_image2
 ```
   B) Another version for starting the process is to download docker image from Dockerhub ```docker pull blank713/fse_project:second```
 2) Run docker image 
-     ```  docker run  -it --name test idle_image2 ```
+    ```bash  docker run  -it --name test idle_image2 ```
 3) Push next command to go in appropriate folder
 ```cd graphics/tensorflow_graphics/projects/local_implicit_grid/ ```
 4) ```./run_fse.sh``` (dont forget to enter "y" when its requested by the system and be shure to have enough free space 
