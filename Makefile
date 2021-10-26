@@ -16,6 +16,7 @@ run:
 
 test: 
 	$(PIP) list
+	python3 -m unittest discover -v
 
 clean:
 	rm -rf __pycache__
