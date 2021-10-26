@@ -9,6 +9,7 @@ requirements:
 	$(PIP) install --no-cache-dir -r requirements_new.txt
 
 run:
+	python3 replace.py
 	python3 resample_geometry.py --input_mesh=demo_data/bunny_watertight.obj --output_ply=demo_data/bunny_pts.ply
 	python3 reconstruct_geometry.py --input_ply=demo_data/bunny_pts.ply --npoints=2048 --steps=3001 --part_size 0.1 --output_ply=/tmp/output.ply
 
