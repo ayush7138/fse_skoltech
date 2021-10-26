@@ -97,3 +97,4 @@ Be careful and patient!!! - this execution takes up two hours to be done
 6) Execute Pylint by ```./pylint_test.sh```
 
 7) Workflow - you can additionally try created GitHub workflows
+
